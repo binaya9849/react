@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resources — Nepal Gen Z</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar contact-header">
+      <div class="container">
+        <div class="logo"><div class="icon"></div><h3>Nepal <span>GenZ</span></h3></div>
+        <button class="menu-toggle" id="menuToggleContact" aria-expanded="false">☰</button>
+        <nav class="navlinks" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="causes.html">Causes</a>
+          <a href="movements.html">Movements</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Resources</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNavContact" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Causes</a>
+      <a href="testimonials.html">Movements</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Resources</a>
+    </div>
+
+    <main class="page container">
+      <h2>Verified Resources & Safety</h2>
+      <p>Below are curated resources for participants and supporters. Use only verified links and follow local guidance for safety.</p>
+
+      <section class="menu-grid">
+        <div class="menu-item">
+          <h4>Safety Guidelines</h4>
+          <p>How to stay safe during demonstrations: plan exit routes, stay with friends, carry ID and water, and avoid escalation.</p>
+        </div>
+        <div class="menu-item">
+          <h4>Legal Aid</h4>
+          <p>List of verified legal aid organizations and helplines for timely support (update with local contacts before publishing).</p>
+        </div>
+        <div class="menu-item">
+          <h4>Fact-checking</h4>
+          <p>Links to reliable fact-checkers and guidance to verify photos and claims before sharing online.</p>
+        </div>
+        <div class="menu-item">
+          <h4>Medical Help</h4>
+          <p>First-aid basics and nearest clinics. Carry basic supplies and know your local emergency numbers.</p>
+        </div>
+      </section>
+
+      <form id="contactForm" class="contact-form" action="#" onsubmit="return false;">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required placeholder="Request for information, offer support, or report a verified resource"></textarea></label>
+        <button class="btn btn-primary" type="submit">Send</button>
+        <div id="formMsg" class="muted" style="margin-top:10px"></div>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><strong>Support</strong><div class="muted">Please verify sources before sharing — this site is informational.</div></div>
+        <div class="muted">© <span id="yearContact"></span> Nepal Gen Z Awareness</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
